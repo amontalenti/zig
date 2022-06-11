@@ -1,3 +1,10 @@
+src/zig-cache
+zig-cache/**
+zig-out/**
+
+hello
+scratch
+
 # Prerequisites
 *.d
 
