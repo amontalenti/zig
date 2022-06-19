@@ -16,7 +16,7 @@ pub fn main() !void {
     while (true) {
         const oneChar: c_int = c.getchar();
         if (oneChar == c.EOF) {
-            try stdout.print("> Hit EOF! ({d} chars, {d} words, {d} lines)", .{ numChars, numWords, numLines });
+            try stdout.print("> Hit EOF! ({d} chars, {d} words, {d} lines)\n", .{ numChars, numWords, numLines });
             return;
         }
         print("{c}", .{@intCast(u8, oneChar)});

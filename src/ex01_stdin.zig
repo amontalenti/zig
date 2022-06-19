@@ -12,7 +12,7 @@ pub fn main() !void {
 
     while (true) {
         const line = (try stdin.readUntilDelimiterOrEof(&buf, '\n')) orelse {
-            try stdout.print(">> Hit EOF! ({d} chars, {d} words, {d} lines)\n", .{ numChars, numWords, numLines });
+            try stdout.print("> Hit EOF! ({d} chars, {d} words, {d} lines)\n", .{ numChars, numWords, numLines });
             return;
         };
 

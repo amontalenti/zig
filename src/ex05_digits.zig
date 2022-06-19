@@ -26,7 +26,7 @@ pub fn main() !void {
             print("> Hit EOF!\n", .{});
             print("> char, word, line count: {d} chars, {d} words, {d} lines\n", .{ numChars, numWords, numLines });
             print("> whitespace vs digits  : {d} whitespace, {d} digit, {d} other\n", .{ numWhite, numDigit, numOther });
-            print("> digits array, '0'-'9' : {any}", .{numDigitArray});
+            print("> digits array, '0'-'9' : {any}\n", .{numDigitArray});
             return;
         }
         const charAsciiCode: u8 = @intCast(u8, oneChar);
