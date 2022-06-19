@@ -43,7 +43,7 @@ pub fn main() !void {
 test {
     const expectEqual = std.testing.expectEqual;
     var i: u64 = 1;
-    // change maxPower to e.g. 100 and it'll overflow
+    // change max_power to e.g. 100 and it'll overflow
     const max_power = 10;
 
     while (i <= max_power) : (i += 1) {
