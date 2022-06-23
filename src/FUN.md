@@ -4,6 +4,8 @@
 
 - Conclusion: you can use Zig to write C extension modules for Python (as a way to speed up hotspots)
 
+---
+
 - Gameboy emulator port C => Zig, then Zig => WebAssembly
 
 - Multiplayer Gameboy over serial port (what!?)
