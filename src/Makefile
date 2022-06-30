@@ -7,3 +7,4 @@ test:
 cprogs:
 	zig cc power.c -o run_power
 	zig cc getchar.c -o run_getchar
+	zig cc hello.c -o run_hello
