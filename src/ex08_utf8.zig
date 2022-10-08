@@ -27,4 +27,6 @@ test "using slices for strings" {
     // string. If you don't need to deal with individual characters, no need
     // to decode.
     try expect(mem.eql(u8, hello_world, "hello 世界"));
+    // the ++ operator is a shorthand for string concatenation
+    try expect(mem.eql(u8, hello_world, hello ++ " " ++ world));
 }
