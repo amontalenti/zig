@@ -34,7 +34,7 @@ pub fn main() !void {
 
 test {
     const expectEqual = std.testing.expectEqual;
-    const exampleStr: [2:0]u8 = .{ '0', '1' };
+    const exampleStr = [_:0]u8{ '0', '1' };
     try expectEqual(std.mem.eql(u8, &exampleStr, "01"), true);
     try expectEqual(exampleStr.len, 2);
     try expectEqual(exampleStr.len, strlen(&exampleStr));
