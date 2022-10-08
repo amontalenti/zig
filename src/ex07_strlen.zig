@@ -31,3 +31,12 @@ pub fn main() !void {
     const z = "zig is a great programming language!";
     print("{s} = {d}\n", .{ z, strlen(z) });
 }
+
+test {
+    const expectEqual = std.testing.expectEqual;
+    const exampleStr: [2:0]u8 = .{ '0', '1' };
+    try expectEqual(std.mem.eql(u8, &exampleStr, "01"), true);
+    try expectEqual(exampleStr.len, 2);
+    try expectEqual(exampleStr.len, strlen(&exampleStr));
+    try expectEqual("hello, world".len, strlen("hello, world"));
+}
